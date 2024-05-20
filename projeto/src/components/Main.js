@@ -4,11 +4,14 @@ import MainImage from "../assetsFinal/main-image.png";
 
 const MainContainer = styled.div`
   position: relative;
-  height: 80vh;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 20 1 100%;
+  @media (max-width: 768px) {
+    height: 400px;
+  }
 `;
 
 const MainImageStyled = styled.img`
@@ -16,24 +19,26 @@ const MainImageStyled = styled.img`
   height: 100%;
   object-fit: cover;
   @media (max-width: 768px) {
-    height: auto;
+    height: 100%;
   }
 `;
 
 const TextMain = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
-  position: relative;
-  bottom: 70%;
+  position: absolute;
   padding: 20px;
   max-width: 40%;
   text-align: center;
   z-index: 1;
-  max-height: 30%;
+  max-height: 80%;
   @media (max-width: 768px) {
-    bottom: 50%;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    top:auto;
     max-width: 100%;
     padding: 10px;
   }
@@ -48,6 +53,9 @@ const TextMainH1 = styled.h1`
   text-align: left;
   @media (max-width: 768px) {
     font-size: 24px;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -64,6 +72,9 @@ const TextMainP = styled.p`
   word-break: break-word;
   @media (max-width: 768px) {
     font-size: 12px;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
   }
 `;
 

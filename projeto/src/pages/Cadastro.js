@@ -19,15 +19,18 @@ const HomeContainer = styled.div`
 
 const TitleProjetos = styled.h1`
   color: white;
-  position: relative;
-  left: 42%;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
   animation-delay: 0.5s;
 `;
 
 const ListProjetos = styled.h1`
   color: white;
   position: relative;
-  left: 39%;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
 `;
 
 function CadastroPage() {

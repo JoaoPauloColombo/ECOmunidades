@@ -7,6 +7,10 @@ export const ListContainer = styled.div`
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const NoticiaCard = styled.div`
@@ -19,14 +23,22 @@ export const NoticiaCard = styled.div`
   border-radius: 8px;
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  @media screen and (max-width: 768px) {
+    width: 95%;
+  }
 `;
 
 export const NoticiaImage = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 30%;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
   margin-right: 20px;
+
+  @media screen and (max-width: 768px) {
+    width: 40%;
+  }
 `;
 
 export const NoticiaInfo = styled.div`

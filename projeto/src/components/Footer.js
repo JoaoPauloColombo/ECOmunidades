@@ -1,9 +1,9 @@
-import React, {  } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import LogoImage from "../assetsFinal/logo.png";
 
 const FooterContainer = styled.footer`
-  height: 300px; /* fixed height */
+  height: 400px;
   flex: 1 1 100vw;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@ const Menu = styled.div`
 `;
 
 const LogoFooter = styled.div`
-  width: 400px;
+  width: 500px;
   height: 100%;
   @media (max-width: 768px) {
     width: 100%;
@@ -47,52 +47,56 @@ const LogoFooterImg = styled.img`
 `;
 
 const LogoFooterP = styled.p`
+position: relative;
+    bottom: 25%;
+    left:10%;
   width: 300px;
-  position: absolute;
-  left: 2%;
-  top: 60%;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: flex-start;
   font-size: 15px;
   color: white;
   font-weight: 800;
   @media (max-width: 768px) {
-    position: relative;
-    top: 0;
-    left: 0;
-    text-align: center;
-    margin-top: 10px;
+    display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   }
 `;
 
 const Termos = styled.div`
   display: flex;
   flex-direction: row;
-  position: relative;
-  left: 30%;
-  top:20%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   font-weight: 800;
   background-color: #136D58;
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    left: 0;
-    top: 0;
-    padding: 20px;
   }
 `;
 
 const FooterHr = styled.hr`
-  position: relative;
-  left: 40%;
-  top:20%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   width: 80%;
   @media (max-width: 768px) {
-    width: 50%;
+    width: 80%;
   }
 `;
 const TermosP = styled.p`
   padding: 20px;
-  color:white;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   @media (max-width: 768px) {
     padding: 10px;
   }
@@ -106,7 +110,6 @@ function Footer() {
           <LogoFooterImg src={LogoImage} alt="" />
           <LogoFooterP>Construindo cidades sustentáveis, conectadas e resilientes para um futuro próspero.</LogoFooterP>
         </LogoFooter>
-
       </Menu>
       <FooterHr />
       <Termos>

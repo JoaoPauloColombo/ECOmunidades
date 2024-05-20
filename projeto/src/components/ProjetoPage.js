@@ -6,7 +6,6 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   padding: 20px;
   background: linear-gradient(to bottom, #136D58, #22c9a2);
   border-radius: 10px;
@@ -18,10 +17,9 @@ const Container = styled.div`
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   animation: form-animation 0.5s ease-in-out;
   font-weight: 800;
-  width: 90%;
+  width: 80%;
   position:relative;
-  left:4%
-  
+  margin: 0 auto;
 `;
 
 const Title = styled.h1`
@@ -68,7 +66,7 @@ const ODS = () => {
             </Paragraph>
             <Subtitle>5. Igualdade de Gênero</Subtitle>
             <Paragraph>
-                Este objetivo visa alcançar a igualdade de gênero e capacitar todas as mulheres e meninas. Alguns dos principais desafios incluem a violência de gênero, a desigualdade salarial e a falta de representação política.
+                Este objetivo visa alcançar a igualdade de gênero e capacitar todas as mulheres e meninas. Alguns dos principais desafios incluem a violência degênero, a desigualdade salarial e a falta de representação política.
             </Paragraph>
             <Subtitle>6. Água Limpa e Saneamento</Subtitle>
             <Paragraph>

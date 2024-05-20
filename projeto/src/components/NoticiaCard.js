@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
+import Background from "../assetsFinal/tropical-leaves.jpg";
+
+
+const HomeContainer = styled.div`
+	background-image: url(${Background});
+`;
 
 const MainTitle = styled.h1`
     text-align: center;
@@ -24,12 +30,12 @@ const StyledImage = styled.img`
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid #007BFF;
+    border: 5px solid #136D58;;
     object-fit: cover;
     margin-bottom: 10px;
 `
 const SubTitle = styled.h2`
-    color: #007BFF;
+    color: #fff;
     text-align: center;
     margin: 0 0 5px 0;
 `
@@ -38,7 +44,7 @@ const Button = styled.button`
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background: #136D58;
     color: #fff;
     cursor: pointer;
     &:hover{
@@ -53,7 +59,7 @@ function NoticiasCard({characters}){
         navigate(`/bio/${id}`)
     }
     return(
-        <div>
+        <HomeContainer>
             <MainTitle>Noticias</MainTitle>
             <Container>
                 {characters.map((character)=>(
@@ -64,7 +70,7 @@ function NoticiasCard({characters}){
                     </ImageCard>
                 ))}
             </Container>
-        </div>
+        </HomeContainer>
     )
 }
 

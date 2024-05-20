@@ -9,10 +9,10 @@ const HeaderContainer = styled.header`
     background: #136D58;
     flex: 1 1 100vw;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     @media (max-width: 768px) {
         flex-direction: column;
+        height:60%;
     }
 `;
 
@@ -20,7 +20,6 @@ const Logo = styled.div`
     flex: 1 1 200px;
     align-items: center;
     @media (max-width: 768px) {
-        width: 100%;
         flex: 1 1 100%;
     }
 `;
@@ -29,8 +28,8 @@ const LogoImageStyled = styled.img`
     width: 250px;
     height: 250px;
     @media (max-width: 768px) {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 `;
 
@@ -43,7 +42,6 @@ const MenuButton = styled.button`
     cursor: pointer;
     display: none;
     @media (max-width: 768px) {
-        display: block;
     }
 `;
 
@@ -68,7 +66,7 @@ const Nav = styled.nav`
 const NavLinks = styled.div`
     display: flex;
     @media (max-width: 768px) {
-        width: 100%;
+        width: 90%;
         justify-content: space-around;
     }
 `;
@@ -83,6 +81,7 @@ const StyledLink = styled(Link)`
     }
     @media (max-width: 768px) {
         margin: 1em 0;
+        font-size:14px;
     }
 `;
 

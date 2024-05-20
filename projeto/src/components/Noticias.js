@@ -5,7 +5,7 @@ import noticiasImage2 from "../assetsFinal/noticia2.jpg";
 import noticiasImage3 from "../assetsFinal/noticia3.jpg";
 
 const Section4Container = styled.section`
-  height: 600px; /* fixed height */
+  height: 600px;
   display: flex;
   flex: 20 1 100%;
   background-color: white;
@@ -25,8 +25,7 @@ const Noticia = styled.div`
 
 const Section4H1 = styled.h1`
   position: relative;
-  top: 10%;
-  left: 10%;
+  text-align: center;
   font-size: 40px;
   @media (max-width: 768px) {
     font-size: 24px;
@@ -38,7 +37,6 @@ const Section4H1 = styled.h1`
 
 const GroupNoticias = styled.div`
   position: relative;
-  top: 10%;
   left: 10%;
   width: 80%;
   height: 60%;
@@ -47,7 +45,8 @@ const GroupNoticias = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
-
+    text-align: center;
+    align-items:center;
   }
 `;
 
@@ -57,18 +56,21 @@ const BoxNoticias = styled.div`
   height: 100%;
   margin-left: 10px;
   border-radius: 10px;
-  display: flex; /* Add this line */
-  flex-direction: column; /* Add this line */
-  justify-content: center; /* Add this line */
-  align-items: center; /* Add this line */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
   @media (max-width: 768px) {
-    width: 50%;
+    width: 65%;
     margin: 20px 0;
-	text-align: center;
+	  text-align: center;
+    align-items:center;
+    height: auto;
   }
 `;
 
 const BoxNoticiasImg = styled.img`
+  margin-top: 40px;
   width: 90%;
   height: 50%;
   border-radius: 10px;
@@ -80,16 +82,16 @@ const BoxNoticiasImg = styled.img`
 
 const BoxNoticiasP = styled.p`
   position: relative;
-  top: 20%;
-  left: 40%;
-  transform: translate(-50%, -50%);
+  top: 5%;
   width: 80%;
   height: 30%;
   text-align: center;
   color: white;
   @media (max-width: 768px) {
+    position: relative;
+    bottom:50%;
     height: auto;
-    padding: 10px;
+    margin-bottom: 30px;
   }
 `;
 

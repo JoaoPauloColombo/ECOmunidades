@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const Section2Container = styled.section`
-  min-height: calc(120vh - 224px);
+  min-height: calc(150vh - 224px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@ const Section2Container = styled.section`
 
 const NumerosStyle = styled.div`
   flex-wrap: nowrap;
-  width: 70%;
+  width: 80%;
   height: 70%;
   border-radius: 10px;
   padding: 50px; 

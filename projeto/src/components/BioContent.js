@@ -5,6 +5,11 @@ import styled from 'styled-components';
 import Header from '../components/Header';
 import Main from '../components/Main';
 import Footer from '../components/Footer';
+import Background from "../assetsFinal/tropical-leaves.jpg";
+
+const HomeContainer = styled.div`
+	background-image: url(${Background});
+`;
 
 const Container = styled.div`
   max-width: 1000px;
@@ -22,7 +27,7 @@ const Content = styled.div`
   width: 100%;
   gap: 20px;
   margin-bottom: 20px;
-  background: #fff;
+  background: linear-gradient(to bottom, #136D58, #22c9a2);
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -43,17 +48,19 @@ const TextContainer = styled.div`
 
 const Text = styled.p`
   text-align: justify;
+  color:white;
 `;
 
 const Title = styled.h2`
   text-align: left;
+  color:white;
 `;
 
 const Button = styled.button`
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #007BFF;
+  background-color: #136D58;
   color: white;
   cursor: pointer;
   align-self: flex-start;
@@ -89,7 +96,7 @@ function BioContent() {
   }
 
   return (
-    <div>
+    <HomeContainer>
       <Header />
       <Main />
       <Container>
@@ -103,7 +110,7 @@ function BioContent() {
         </Content>
       </Container>
       <Footer />
-    </div>
+    </HomeContainer>
   );
 }
 

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 const FormContainer = styled.div`
   position: relative;
-  left: 35%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -18,8 +17,15 @@ const FormContainer = styled.div`
   transition: all 0.3s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   animation: form-animation 0.5s ease-in-out;
-  width: 30%; 
+  width: 30%;
   font-weight: 800;
+  @media (max-width: 768px) {
+    width: 80%;
+    left: 10%;
+  }
+  position: relative;
+  left: 34%;
+  top:20%
 `;
 
 const InputContainer = styled.div`
@@ -29,12 +35,20 @@ const InputContainer = styled.div`
   justify-content: center;
   margin-bottom: 20px;
   margin-top: 20px;
+  width: 100%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  width: 100%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Input = styled.input`
@@ -105,7 +119,7 @@ function NoticiaForm({ fetchNoticias }) {
 
     try {
       await axios.post(
-        'http://localhost:5000/api/noticias',
+'http://localhost:5000/api/noticias',
         formData,
         {
           headers: {
