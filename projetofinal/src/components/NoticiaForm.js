@@ -116,14 +116,14 @@ function NoticiaForm({ fetchNoticias }) {
     formData.append('nome', nome);
     formData.append('texto', descricao);
     formData.append('foto', imagem);
-
+  
     try {
       await axios.post(
-'http://localhost:5000/api/noticias',
+        'http://localhost:5000/api/noticias',
         formData,
         {
           headers: {
-            'Content-Type': 'ultipart/form-data',
+            'Content-Type': 'multipart/form-data',
           },
         }
       );

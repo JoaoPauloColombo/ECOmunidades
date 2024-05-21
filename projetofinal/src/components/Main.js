@@ -18,6 +18,7 @@ const MainImageStyled = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: blur(1px);
   @media (max-width: 768px) {
     height: 100%;
   }
@@ -45,12 +46,12 @@ const TextMain = styled.div`
 `;
 
 const TextMainH1 = styled.h1`
-  color: #00FF1A;
+  color: #62FF1E;
   text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.50);
   font-family: Asap;
   font-size: 40px;
   font-style: italic;
-  text-align: left;
+  text-align: center;
   @media (max-width: 768px) {
     font-size: 24px;
     text-align:center;
@@ -61,17 +62,17 @@ const TextMainH1 = styled.h1`
 
 const TextMainP = styled.p`
   margin-bottom: 0;
-  color: #FFF;
+  color: white;
   font-family: Asap;
-  font-size: 15px;
+  font-size: 24px; // Increase the font size
   font-style: italic;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 36px; // Increase the line height
   text-align: left;
   max-width: 100%;
   word-break: break-word;
   @media (max-width: 768px) {
-    font-size: 12px;
+    font-size: 14px;
     text-align:center;
     align-items: center;
     justify-content: center;

@@ -44,7 +44,7 @@ function CadastroPage() {
         <TitleProjetos>Cadastro Projetos</TitleProjetos>
         <NoticiaForm setRefresh={setRefresh} />
         <ListProjetos>Projetos Cadastrados</ListProjetos>
-        <NoticiaList refresh={refresh} setRefresh={setRefresh} />
+        <NoticiaList refresh={refresh} setRefresh={setRefresh}/>
         <Footer />
       </HomeContainer>
     </div>

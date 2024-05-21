@@ -10,6 +10,7 @@ const HomeContainer = styled.div`
 const MainTitle = styled.h1`
     text-align: center;
     margin: 40px 0;
+    color:white;
 `
 const Container = styled.div`
     max-width: 1000px;

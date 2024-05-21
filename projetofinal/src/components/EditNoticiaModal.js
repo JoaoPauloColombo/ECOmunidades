@@ -70,26 +70,27 @@ function EditNoticiaModal({isOpen, onRequestClose, noticia, setRefresh, setEditN
         }
     }, [noticia])
 
-    const handleSubmit = async(e) =>{
-        e.preventDefault()
-        const formData = new FormData()
-        if (nome) formData.append('nome', nome)
-        if (descricao) formData.append('texto', descricao)
-        if (imagem) formData.append('foto', imagem)
-
-        try{
-            const response = await axios.put(`http://localhost:5000/api/noticias/${noticia.id}`, formData, {
-                headers: {
-                    'Content-Type':'multipart/form-data',
-                }
-            })
-            setRefresh((prev) => !prev)
-            setEditNoticia(null)
-            onRequestClose()
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const formData = new FormData();
+        if (nome) formData.append('nome', nome);
+        if (descricao) formData.append('texto', descricao);
+        if (imagem) formData.append('foto', imagem);
+      
+        try {
+          const response = await axios.put(`http://localhost:5000/api/noticias/${noticia.id}`, formData, {
+            headers: {
+              'Content-Type': 'multipart/form-data',
+            },
+          });
+          setRefresh((prev) => !prev);
+          setEditNoticia(null);
+          onRequestClose();
+          console.log('Noticia updated successfully:', response.data);
         } catch (error) {
-            console.error('Erroa ao atualizar os dados', error)
+          console.error('Error updating noticia:', error);
         }
-    }
+      };
     const handleImageChange = (event) =>{
         setImagem(event.target.files[0])
     }
@@ -128,12 +129,12 @@ function EditNoticiaModal({isOpen, onRequestClose, noticia, setRefresh, setEditN
                         type="text"
                         value={nome}
                         onChange={(e) => setNome(e.target.value)}
-                        placeholder="Nome da Noticia"
+                        placeholder="Nome do Noticia"
                     />
                     <TextArea
                         value={descricao}
                         onChange={handleDescricaoChange}
-                        placeholder="Descrição da Noticia"
+                        placeholder="Descrição do Noticia"
                         rows="4"
                     />
                     <CharacterCount>
