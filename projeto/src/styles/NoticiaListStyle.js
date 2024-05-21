@@ -21,7 +21,7 @@ export const NoticiaCard = styled.div`
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: #136D58;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   @media screen and (max-width: 768px) {
@@ -49,13 +49,13 @@ export const NoticiaNome = styled.h3`
   margin: 0;
   margin-bottom: 10px;
   font-size: 1.2em;
-  color: #333;
+  color: white;
 `;
 
 export const NoticiaDescricao = styled.p`
   margin: 0;
   margin-bottom: 10px;
-  color: #666;
+  color: white;
 `;
 
 export const Actions = styled.div`

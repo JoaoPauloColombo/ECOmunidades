@@ -21,7 +21,7 @@ const FormContainer = styled.div`
   font-weight: 800;
   @media (max-width: 768px) {
     width: 80%;
-    left: 10%;
+    left: 6%;
   }
   position: relative;
   left: 34%;
@@ -67,16 +67,16 @@ const InputFocus = styled(Input)`
 `;
 
 const InputPlaceholder = styled.span`
+  display: block;
+  margin: 0 auto;
   padding: 10px;
   color: #fff;
-  position:relative;
-  left: 30%
+  padding-bottom: 30px;
 `;
 
 const InputPlaceholderDesc = styled.span`
   padding: 10px;
   color: #fff;
-  position:relative;
   padding-bottom: 30px;
 `;
 
