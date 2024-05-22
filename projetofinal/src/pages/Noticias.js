@@ -5,10 +5,9 @@ import Footer from '../components/Footer'
 import Main from '../components/Main'
 import NoticiasCard from '../components/NoticiaCard'
 import styled from 'styled-components';
-import Background from "../assetsFinal/tropical-leaves.jpg";
 
 const HomeContainer = styled.div`
-	background-image: url(${Background});
+background: #136D58;
 `;
 
 function Persona(){
