@@ -68,7 +68,7 @@ function NoticiaList({refresh, setRefresh}) {
                 <EditNoticiaModal
                     isOpen={isModalOpen}
                     onRequestClose={() => setIsModalOpen(false)}
-                    Noticia={editNoticia}
+                    noticia={editNoticia}
                     setRefresh={setRefresh}
                     setEditNoticia={setEditNoticia}
                 />
