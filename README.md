@@ -59,7 +59,7 @@ Para fazer o deploy desse projeto rode
 
 # Implantação:
 
- # Para implantar o projeto, use seu serviço de hospedagem preferido. Aqui estão algumas opções populares:
+ ## Para implantar o projeto, use seu serviço de hospedagem preferido. Aqui estão algumas opções populares:
 
 Firebase Hosting
 
