@@ -30,15 +30,17 @@ cd backend
 Inicie o servidor de desenvolvimento:
 npm run dev
 
-Implantação
+Ao finalizar essas etapas o site esta operando normalmente.
+
+Implantação:
 Para implantar o projeto, use seu serviço de hospedagem preferido. Aqui estão algumas opções populares:
 
 Firebase Hosting
 GitHub Pages
 Netlify
 
-Contribuição
+Contribuição:
 Contribuições são bem-vindas! Por favor, envie um pull request com suas alterações propostas.
 
-Código de Conduta
+Código de Conduta:
 Este projeto foi lançado com um Código de Conduta do Contribuidor. Ao participar deste projeto, você concorda em cumprir seus termos.
