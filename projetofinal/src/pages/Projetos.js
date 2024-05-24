@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Main from '../components/Main'
-import ProjetoPage from '../components/ProjetoPage';
+import ObjetivosPage from '../components/ObjetivosPage';
 import Background from "../assetsFinal/tropical-leaves.jpg";
 import styled from 'styled-components';
 
@@ -15,7 +15,7 @@ function Contato(){
         <HomeContainer>
             <Header/>
             <Main />
-            <ProjetoPage/>
+            <ObjetivosPage/>
             <Footer/>
         </HomeContainer>
     );
