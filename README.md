@@ -57,7 +57,7 @@ Para fazer o deploy desse projeto rode
 
 ## Ao finalizar essas etapas o site esta operando normalmente.
 
- ## Implantação:
+# Implantação:
 
  # Para implantar o projeto, use seu serviço de hospedagem preferido. Aqui estão algumas opções populares:
 
