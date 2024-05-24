@@ -78,8 +78,7 @@ function BioContent() {
     const fetchCharacter = async () => {
       try {
         const response = await axios.get(
-          // `http://localhost:5000/api/noticias/${id}`
-          `projetos.mysql.database.azure.com/api/noticias/${id}`
+           `http://localhost:5000/api/noticias/${id}`
           );
         setCharacter(response.data);
       } catch (error) {

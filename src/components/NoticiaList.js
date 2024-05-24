@@ -24,8 +24,8 @@ function NoticiaList({refresh, setRefresh}) {
     const fetchNoticias = async () => {
         try {
             const response = await axios.get(
-                //'http://localhost:5000/api/noticias'
-                'projetos.mysql.database.azure.com/api/noticias'
+                'http://localhost:5000/api/noticias'
+                
                 )
             setNoticias(response.data)
         } catch (error) {
@@ -36,8 +36,8 @@ function NoticiaList({refresh, setRefresh}) {
     const handleDelete = async (id) => {
         try {
             await axios.delete(
-                //`http://localhost:5000/api/noticias/${id}`
-                `projetos.mysql.database.azure.com/api/noticias/${id}`
+                `http://localhost:5000/api/noticias/${id}`
+                
                 )
             fetchNoticias()
         } catch (error) {
@@ -48,8 +48,8 @@ function NoticiaList({refresh, setRefresh}) {
     const handleEdit = async (id) => {
         try {
             const response = await axios.get(
-                //`http://localhost:5000/api/noticias/${id}`
-                `projetos.mysql.database.azure.com/api/noticias/${id}`
+                `http://localhost:5000/api/noticias/${id}`
+                
                 )
             setEditNoticia(response.data)
             setIsModalOpen(true)
@@ -63,8 +63,8 @@ function NoticiaList({refresh, setRefresh}) {
             {noticias.map((noticias) => (
                 <NoticiaCard key={noticias.id}>
                     <NoticiaImage src={
-                        //`http://localhost:5000/uploads/${noticias.foto}`
-                        `projetos.mysql.database.azure.com/uploads/${noticias.foto}`
+                        `http://localhost:5000/uploads/${noticias.foto}`
+                        
                         } alt={noticias.nome} style={{ width: '100px' }} />
                     <NoticiaInfo>
                         <NoticiaNome>{noticias.nome}</NoticiaNome>

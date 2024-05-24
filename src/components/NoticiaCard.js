@@ -66,8 +66,8 @@ function NoticiasCard({characters}){
                 {characters.map((character)=>(
                     <ImageCard key={character.id}>
                         <StyledImage src={
-                            // `http://localhost:5000/uploads/${character.foto}`
-                             `projetos.mysql.database.azure.com/uploads/${character.foto}`
+                             `http://localhost:5000/uploads/${character.foto}`
+                        
                             } alt={character.nome} />
                         <SubTitle>{character.nome}</SubTitle>
                         <Button onClick={() => handleLearnMore(character.id)}>Saiba Mais</Button>

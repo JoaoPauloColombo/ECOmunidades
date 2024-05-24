@@ -119,8 +119,8 @@ function NoticiaForm({ fetchNoticias }) {
   
     try {
       await axios.post(
-        //'http://localhost:5000/api/noticias'
-        'projetos.mysql.database.azure.com/api/noticias'
+        'http://localhost:5000/api/noticias'
+        
         ,
         formData,
         {

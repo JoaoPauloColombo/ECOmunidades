@@ -79,8 +79,8 @@ function EditNoticiaModal({isOpen, onRequestClose, noticia, setRefresh, setEditN
       
         try {
           const response = await axios.put(
-            // `http://localhost:5000/api/noticias/${noticia.id}`
-            `projetos.mysql.database.azure.com/api/noticias/${noticia.id}`
+             `http://localhost:5000/api/noticias/${noticia.id}`
+        
             , formData, {
             headers: {
               'Content-Type': 'multipart/form-data',
