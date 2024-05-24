@@ -59,7 +59,7 @@ Para fazer o deploy desse projeto rode
   npm run dev
 ```
 
-## Ao finalizar essas etapas o site esta operando normalmente.
+### Ao finalizar essas etapas o site esta operando normalmente.
 
 # Implantação:
 
