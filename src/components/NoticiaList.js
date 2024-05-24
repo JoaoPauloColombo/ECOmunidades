@@ -23,7 +23,10 @@ function NoticiaList({refresh, setRefresh}) {
 
     const fetchNoticias = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/noticias')
+            const response = await axios.get(
+                //'http://localhost:5000/api/noticias'
+                'projetos.mysql.database.azure.com/api/noticias'
+                )
             setNoticias(response.data)
         } catch (error) {
             console.error('erro ao buscar noticias', error)
@@ -32,7 +35,10 @@ function NoticiaList({refresh, setRefresh}) {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/noticias/${id}`)
+            await axios.delete(
+                //`http://localhost:5000/api/noticias/${id}`
+                `projetos.mysql.database.azure.com/api/noticias/${id}`
+                )
             fetchNoticias()
         } catch (error) {
             console.error('Erro ao deletar a noticia', error)
@@ -41,7 +47,10 @@ function NoticiaList({refresh, setRefresh}) {
 
     const handleEdit = async (id) => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/noticias/${id}`)
+            const response = await axios.get(
+                //`http://localhost:5000/api/noticias/${id}`
+                `projetos.mysql.database.azure.com/api/noticias/${id}`
+                )
             setEditNoticia(response.data)
             setIsModalOpen(true)
         } catch (error) {
@@ -53,7 +62,10 @@ function NoticiaList({refresh, setRefresh}) {
         <ListContainer>
             {noticias.map((noticias) => (
                 <NoticiaCard key={noticias.id}>
-                    <NoticiaImage src={`http://localhost:5000/uploads/${noticias.foto}`} alt={noticias.nome} style={{ width: '100px' }} />
+                    <NoticiaImage src={
+                        //`http://localhost:5000/uploads/${noticias.foto}`
+                        `projetos.mysql.database.azure.com/uploads/${noticias.foto}`
+                        } alt={noticias.nome} style={{ width: '100px' }} />
                     <NoticiaInfo>
                         <NoticiaNome>{noticias.nome}</NoticiaNome>
                         <NoticiaDescricao>{noticias.texto}</NoticiaDescricao>

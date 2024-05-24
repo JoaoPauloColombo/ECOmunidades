@@ -78,7 +78,10 @@ function EditNoticiaModal({isOpen, onRequestClose, noticia, setRefresh, setEditN
         if (imagem) formData.append('foto', imagem);
       
         try {
-          const response = await axios.put(`http://localhost:5000/api/noticias/${noticia.id}`, formData, {
+          const response = await axios.put(
+            // `http://localhost:5000/api/noticias/${noticia.id}`
+            `projetos.mysql.database.azure.com/api/noticias/${noticia.id}`
+            , formData, {
             headers: {
               'Content-Type': 'multipart/form-data',
             },

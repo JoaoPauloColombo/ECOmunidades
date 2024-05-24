@@ -77,7 +77,10 @@ function BioContent() {
   useEffect(() => {
     const fetchCharacter = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/noticias/${id}`);
+        const response = await axios.get(
+          // `http://localhost:5000/api/noticias/${id}`
+          `projetos.mysql.database.azure.com/api/noticias/${id}`
+          );
         setCharacter(response.data);
       } catch (error) {
         console.error('Erro ao buscar noticia', error);
@@ -101,7 +104,10 @@ function BioContent() {
       <Main />
       <Container>
         <Content>
-          <Image src={`http://localhost:5000/uploads/${character.foto}`} alt={character.nome} />
+          <Image src={
+            //`http://localhost:5000/uploads/${character.foto}`
+            `projetos.mysql.database.azure.com/uploads/${character.foto}`
+            } alt={character.nome} />
           <TextContainer>
             <Title>{character.nome}</Title>
             <Text>{character.texto}</Text>
