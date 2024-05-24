@@ -34,6 +34,7 @@ cd projetofinal
 cd backend
 
 Inicie o servidor de desenvolvimento:
+
 npm run dev
 
 Ao finalizar essas etapas o site esta operando normalmente.
