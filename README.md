@@ -1,6 +1,5 @@
 # ECOmunidades
-Um site em React focado no ODS11 (Objetivo de Desenvolvimento Sustentável 11) e seu impacto nas comunidades.
-
+Bem-vindo ao nosso site dedicado à ODS 11 - Cidades e Comunidades Sustentáveis! Aqui você encontrará recursos valiosos, informações relevantes e inspiração para promover o desenvolvimento urbano sustentável em todo o mundo.
 # Introdução:
 
 Para começar com o eComunidades, siga estas etapas:
