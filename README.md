@@ -38,9 +38,9 @@ Para fazer o deploy desse projeto rode
   http://localhost:3000
 ```
 
-## Ativando o Backend:
+# Ativando o Backend:
 
- # Em outro terminal acesse as pastas:
+ ## Em outro terminal acesse as pastas:
 
 ```bash
   cd projetofinal
@@ -49,13 +49,13 @@ Para fazer o deploy desse projeto rode
   cd backend
 ```
 
-# Inicie o servidor de desenvolvimento:
+## Inicie o servidor de desenvolvimento:
 
 ```bash
   npm run dev
 ```
 
-# Ao finalizar essas etapas o site esta operando normalmente.
+## Ao finalizar essas etapas o site esta operando normalmente.
 
  ## Implantação:
 
