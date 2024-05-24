@@ -1,4 +1,4 @@
-import REACT, {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 import Modal from 'react-modal'
 import axios from 'axios'
 import styled from 'styled-components'
