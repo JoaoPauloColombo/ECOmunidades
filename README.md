@@ -1,47 +1,65 @@
 # ECOmunidades
 Um site em React focado no ODS11 (Objetivo de Desenvolvimento Sustentável 11) e seu impacto nas comunidades.
 
-Introdução:
+# Introdução:
+
 Para começar com o eComunidades, siga estas etapas:
 
-Clone o repositório:
-git clone https://github.com/JoaoPauloColombo/ECOmunidades
 
-Navegue até o diretório do projeto:
+## Clone o repositório:
 
-cd projetofinal
+Para fazer o deploy desse projeto rode
 
-Instale as dependências:
+```bash
+  cd projetofinal
+```
 
-npm install
+## Instale as dependências:
 
-npm install nodemon
+```bash
+  npm install
+```
 
-npm install styled-components
+```bash
+  npm install nodemon
+```
 
-Inicie o servidor de desenvolvimento:
-npm start
+```bash
+  npm install styled-components
+```
 
-Abra o site em seu navegador:
-http://localhost:3000
+## Inicie o servidor de desenvolvimento:
+```bash
+  npm start
+```
 
-Ativando o Backend:
+## Abra o site em seu navegador:
+```bash
+  http://localhost:3000
+```
 
-Em outro terminal acesse as pastas:
+## Ativando o Backend:
 
-cd projetofinal
+ # Em outro terminal acesse as pastas:
 
-cd backend
+```bash
+  cd projetofinal
+```
+```bash
+  cd backend
+```
 
-Inicie o servidor de desenvolvimento:
+# Inicie o servidor de desenvolvimento:
 
-npm run dev
+```bash
+  npm run dev
+```
 
-Ao finalizar essas etapas o site esta operando normalmente.
+# Ao finalizar essas etapas o site esta operando normalmente.
 
-Implantação:
+ ## Implantação:
 
-Para implantar o projeto, use seu serviço de hospedagem preferido. Aqui estão algumas opções populares:
+ # Para implantar o projeto, use seu serviço de hospedagem preferido. Aqui estão algumas opções populares:
 
 Firebase Hosting
 
@@ -49,10 +67,10 @@ GitHub Pages
 
 Netlify
 
-Contribuição:
+# Contribuição:
 
-Contribuições são bem-vindas! Por favor, envie um pull request com suas alterações propostas.
+## Contribuições são bem-vindas! Por favor, envie um pull request com suas alterações propostas.
 
-Código de Conduta:
+# Código de Conduta:
 
-Este projeto foi lançado com um Código de Conduta do Contribuidor. Ao participar deste projeto, você concorda em cumprir seus termos.
+## Este projeto foi lançado com um Código de Conduta do Contribuidor. Ao participar deste projeto, você concorda em cumprir seus termos.
