@@ -73,8 +73,8 @@ Netlify
 
 # Contribuição:
 
-## Contribuições são bem-vindas! Por favor, envie um pull request com suas alterações propostas.
+### Contribuições são bem-vindas! Por favor, envie um pull request com suas alterações propostas.
 
 # Código de Conduta:
 
-## Este projeto foi lançado com um Código de Conduta do Contribuidor. Ao participar deste projeto, você concorda em cumprir seus termos.
+### Este projeto foi lançado com um Código de Conduta do Contribuidor. Ao participar deste projeto, você concorda em cumprir seus termos.
