@@ -158,10 +158,12 @@ function Noticias() {
               Projeto Piloto de Habitação Social Integra Energias Renováveis e Eficiência Energética
             </BoxNoticiasP>
           </BoxNoticias>
+          <BottonProjetos to="/projetos">Ver todas as Noticias</BottonProjetos>
+
         </GroupNoticias>
       </Noticia>
-      <BottonProjetos to="/projetos">Ver todos projetos</BottonProjetos>
-    </Section4Container>
+      </Section4Container>
+    
   );
 }
 
