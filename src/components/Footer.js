@@ -114,7 +114,7 @@ function Footer() {
       </Menu>
       <FooterHr />
       <Termos>
-        <TermosP>© ECOmunidades 2023</TermosP>
+        <TermosP>© ECOmunidades 2024</TermosP>
         <TermosP>Termos de serviço</TermosP>
         <TermosP>Politica de Privacidade</TermosP>
       </Termos>
