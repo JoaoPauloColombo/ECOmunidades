@@ -3,9 +3,7 @@ const app = express()
 const cors = require ('cors')
 const path = require ('path')
 
-app.use(cors({
-    origin: 'https://ecomunidades.vercel.app'
-}))
+app.use(cors())
 app.use(express.json())
 
 const noticiasRoutes = require('./routes/noticiasRoutes')
