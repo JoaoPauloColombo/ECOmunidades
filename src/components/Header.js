@@ -103,7 +103,7 @@ function Header() {
                     <StyledLink to="/projetos">Projetos</StyledLink>
                 </Nav>
                 <Nav>
-                    <StyledLink to="/cadastro">Cadastro Noticia</StyledLink>
+                    <StyledLink to="/cadastro">Cadastro</StyledLink>
                 </Nav>
             </NavLinks>
         </HeaderContainer>
