@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import noticiasImage1 from "../assetsFinal/noticia1.jpg";
 import noticiasImage2 from "../assetsFinal/noticia2.jpg";
 import noticiasImage3 from "../assetsFinal/noticia3.jpg";
+import { Link } from 'react-router-dom';
 
 const Section4Container = styled.section`
   height: 600px;
@@ -95,6 +96,45 @@ const BoxNoticiasP = styled.p`
   }
 `;
 
+const BottonProjetos = styled(Link)`
+	padding: 15px 30px;
+	border: 2px solid #2c2c2c;
+	background-color: #1a1a1a;
+	color: #ffffff;
+	font-size: 1.2rem;
+	cursor: pointer;
+	border-radius: 30px;
+	transition: all 0.4s ease;
+	outline: none;
+	position: relative;
+	overflow: hidden;
+	font-weight: bold;
+    position: relative;
+	text-decoration:none;
+
+	width: 30%;
+	margin: 20px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&:hover{
+	background: radial-gradient(circle,
+			rgba(255, 255, 255, 0.25) 0%,
+			rgba(255, 255, 255, 0) 70%);
+    }
+    @media (max-width: 768px) {
+		position: relative;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 30%;
+		margin: 20px auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+`;
+
 function Noticias() {
   return (
     <Section4Container>
@@ -120,6 +160,7 @@ function Noticias() {
           </BoxNoticias>
         </GroupNoticias>
       </Noticia>
+      <BottonProjetos to="/projetos">Ver todos projetos</BottonProjetos>
     </Section4Container>
   );
 }
