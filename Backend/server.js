@@ -4,7 +4,7 @@ const cors = require ('cors')
 const path = require ('path')
 
 app.use(cors({
-    origin: 'http://localhost:3000'
+    origin: 'https://ecomunidades.vercel.app'
 }))
 app.use(express.json())
 
