@@ -136,8 +136,8 @@ function Numeros() {
           </Button>
         </Numero>
         <Numero>
-          <NumeroH1>75%</NumeroH1>
-          <NumeroH2>Uso de Energia Eólica</NumeroH2>
+          <NumeroH1>15%</NumeroH1>
+          <NumeroH2>Acessibilidade</NumeroH2>
           <NumeroP>
           Dados indicam que mais de 1 bilhão de pessoas no mundo vivem com algum tipo de deficiência, e muitas vezes enfrentam barreiras de acessibilidade em ambientes urbanos.
           </NumeroP>
