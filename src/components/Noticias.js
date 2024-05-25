@@ -6,7 +6,7 @@ import noticiasImage3 from "../assetsFinal/noticia3.jpg";
 import { Link } from 'react-router-dom';
 
 const Section4Container = styled.section`
-  height: 300px;
+  height: 200px;
   display: flex;
   flex: 20 1 100%;
   background-color: white;
