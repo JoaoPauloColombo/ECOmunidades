@@ -150,7 +150,7 @@ function Footer() {
         <TermosP>© ECOmunidades 2024</TermosP>
         <TermosP>Termos de serviço</TermosP>
         <TermosP>Politica de Privacidade</TermosP>
-        <TermosP><Button to="/projetos">
+        <TermosP><Button href="https://regeneracaoglobal.com/home#googtrans(pt)">
             Link ONG
             <Icon viewBox="0 0 24 24" class="icon">
               <path clip-rule="evenodd"
