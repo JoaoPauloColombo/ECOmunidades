@@ -10,6 +10,7 @@ const Section4Container = styled.section`
   display: flex;
   flex: 20 1 100%;
   background-color: white;
+  flex-direction: column;
   @media (max-width: 768px) {
     flex-direction: column;
 	height: 1000px;
@@ -158,10 +159,10 @@ function Noticias() {
               Projeto Piloto de Habitação Social Integra Energias Renováveis e Eficiência Energética
             </BoxNoticiasP>
           </BoxNoticias>
-          <BottonProjetos to="/noticias">Ver todas as Noticias</BottonProjetos>
-
         </GroupNoticias>
       </Noticia>
+      <BottonProjetos to="/noticias">Ver todas as Noticias</BottonProjetos>
+
       </Section4Container>
     
   );
