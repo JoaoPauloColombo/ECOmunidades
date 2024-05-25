@@ -24,7 +24,8 @@ function NoticiaList({refresh, setRefresh}) {
     const fetchNoticias = async () => {
         try {
             const response = await axios.get(
-                'http://localhost:5000/api/noticias'
+                //'http://localhost:5000/api/noticias'
+                'https://ecomunidades.onrender.com/api/noticias'
                 
                 )
             setNoticias(response.data)
@@ -36,7 +37,8 @@ function NoticiaList({refresh, setRefresh}) {
     const handleDelete = async (id) => {
         try {
             await axios.delete(
-                `http://localhost:5000/api/noticias/${id}`
+                //`http://localhost:5000/api/noticias/${id}`
+                `https://ecomunidades.onrender.com/api/noticias/${id}`
                 
                 )
             fetchNoticias()
@@ -48,7 +50,8 @@ function NoticiaList({refresh, setRefresh}) {
     const handleEdit = async (id) => {
         try {
             const response = await axios.get(
-                `http://localhost:5000/api/noticias/${id}`
+                //`http://localhost:5000/api/noticias/${id}`
+                `https://ecomunidades.onrender.com/api/noticias/${id}`
                 
                 )
             setEditNoticia(response.data)
@@ -63,7 +66,8 @@ function NoticiaList({refresh, setRefresh}) {
             {noticias.map((noticias) => (
                 <NoticiaCard key={noticias.id}>
                     <NoticiaImage src={
-                        `http://localhost:5000/uploads/${noticias.foto}`
+                        //`http://localhost:5000/uploads/${noticias.foto}`
+                        `https://ecomunidades.onrender.com/uploads/${noticias.foto}`
                         
                         } alt={noticias.nome} style={{ width: '100px' }} />
                     <NoticiaInfo>

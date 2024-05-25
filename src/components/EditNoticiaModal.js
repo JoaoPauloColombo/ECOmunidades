@@ -79,7 +79,8 @@ function EditNoticiaModal({isOpen, onRequestClose, noticia, setRefresh, setEditN
       
         try {
           const response = await axios.put(
-             `http://localhost:5000/api/noticias/${noticia.id}`
+             //`http://localhost:5000/api/noticias/${noticia.id}`
+             `https://ecomunidades.onrender.com/api/noticias/${noticia.id}`
         
             , formData, {
             headers: {

@@ -16,7 +16,10 @@ function Persona(){
     useEffect(() =>{
         const fetchcharacters = async () =>{
             try{
-                const response = await axios.get('http://localhost:5000/api/noticias')
+                const response = await axios.get(
+                    //'http://localhost:5000/api/noticias'
+                    'https://ecomunidades.onrender.com/api/noticias'
+                )
                 setcharacters(response.data)
             } catch (error){
                 console.error('Erro ao buscar o noticia', error)

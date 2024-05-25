@@ -78,7 +78,8 @@ function BioContent() {
     const fetchCharacter = async () => {
       try {
         const response = await axios.get(
-           `http://localhost:5000/api/noticias/${id}`
+           //`http://localhost:5000/api/noticias/${id}`
+           `https://ecomunidades.onrender.com/api/noticias/${id}`
           );
         setCharacter(response.data);
       } catch (error) {
@@ -105,7 +106,7 @@ function BioContent() {
         <Content>
           <Image src={
             //`http://localhost:5000/uploads/${character.foto}`
-            `projetos.mysql.database.azure.com/uploads/${character.foto}`
+            `https://ecomunidades.onrender.com/uploads/${character.foto}`
             } alt={character.nome} />
           <TextContainer>
             <Title>{character.nome}</Title>
