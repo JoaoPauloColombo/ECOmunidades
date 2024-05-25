@@ -139,8 +139,7 @@ function Numeros() {
           <NumeroH1>75%</NumeroH1>
           <NumeroH2>Uso de Energia Eólica</NumeroH2>
           <NumeroP>
-            Estima-se que até 2050, mais da metade da população mundial vive atualmente em áreas
-            urbanas.
+          Dados indicam que mais de 1 bilhão de pessoas no mundo vivem com algum tipo de deficiência, e muitas vezes enfrentam barreiras de acessibilidade em ambientes urbanos.
           </NumeroP>
           <Button to="/projetos">
             Saiba mais
