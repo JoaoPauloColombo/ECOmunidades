@@ -99,7 +99,6 @@ const BoxNoticiasP = styled.p`
 `;
 
 const Button = styled(Link)`
-  margin-top: 20px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   padding-block: 1rem;
