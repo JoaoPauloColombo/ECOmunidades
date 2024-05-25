@@ -42,7 +42,10 @@ const LogoFooterImg = styled.img`
   @media (max-width: 768px) {
     width: 150px;
     height: 150px;
-    left: 0;
+    display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   }
 `;
 
