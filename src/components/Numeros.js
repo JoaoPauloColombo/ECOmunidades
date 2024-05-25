@@ -123,7 +123,7 @@ function Numeros() {
           <NumeroH1>68%</NumeroH1>
           <NumeroH2>População Urbana Global</NumeroH2>
           <NumeroP>
-            Estima-se que até 2050, mais da metade da população mundial vive atualmente em áreas
+            Estima-se que até 2050, mais da metade da população mundial viverá em áreas
             urbanas.
           </NumeroP>
           <Button to="/projetos">
